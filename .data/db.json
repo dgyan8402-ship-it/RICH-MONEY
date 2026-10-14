@@ -1,0 +1,201 @@
+{
+  "users": [
+    {
+      "id": "usr_admin_001",
+      "fullName": "Kwame Osei (Administrator)",
+      "email": "admin@richmoney.gh",
+      "phone": "+233 24 000 0001",
+      "passwordHash": "$2b$10$zcumnMySCA3NkO//EU3W3O.Am5nPqR9ByoH7DRIIAuMUDGGZkyNV2",
+      "role": "admin",
+      "ghanaCardNumber": "GHA-700100200-1",
+      "kycStatus": "verified",
+      "isFrozen": false,
+      "realBalance": 50000,
+      "demoBalance": 5000,
+      "demoInvested": 2000,
+      "totalDeposited": 60000,
+      "totalWithdrawn": 10000,
+      "createdAt": "2026-01-15T09:00:00.000Z",
+      "securityQuestion": "In which city were you born?",
+      "securityAnswerHash": "$2b$10$zcumnMySCA3NkO//EU3W3Oij1HxFb3yM9SJPTIf3VSHlSmflXKs4i"
+    },
+    {
+      "id": "usr_kofi_002",
+      "fullName": "Kofi Mensah",
+      "email": "kofi.mensah@example.com",
+      "phone": "+233 24 412 3456",
+      "passwordHash": "$2b$10$zcumnMySCA3NkO//EU3W3OzeP3OQaTxQuyX0rCAanWc0A/GYcfKF2",
+      "role": "user",
+      "ghanaCardNumber": "GHA-823456789-3",
+      "kycStatus": "verified",
+      "isFrozen": false,
+      "realBalance": 350,
+      "demoBalance": 750,
+      "demoInvested": 500,
+      "totalDeposited": 500,
+      "totalWithdrawn": 150,
+      "createdAt": "2026-02-10T11:30:00.000Z",
+      "securityQuestion": "In which city were you born?",
+      "securityAnswerHash": "$2b$10$zcumnMySCA3NkO//EU3W3Oij1HxFb3yM9SJPTIf3VSHlSmflXKs4i"
+    }
+  ],
+  "transactions": [
+    {
+      "id": "tx_dm_wd_1791981638318",
+      "userId": "usr_kofi_002",
+      "userEmail": "kofi.mensah@example.com",
+      "userName": "Kofi Mensah",
+      "type": "demo_withdrawal",
+      "mode": "demo",
+      "amount": 100,
+      "currency": "GHS",
+      "paymentMethod": "mtn_momo",
+      "paymentReference": "DEMO-WD-340414",
+      "status": "successful",
+      "channelDetails": {
+        "phone": "+233 24 412 3456",
+        "accountName": "Kofi Mensah",
+        "network": "Demo Mobile Network"
+      },
+      "notes": "DEMO WITHDRAWAL: Simulated request for testing and demonstration. Demo balances do not represent real financial transactions.",
+      "createdAt": "2026-10-14T12:40:38.318Z",
+      "updatedAt": "2026-10-14T12:40:38.318Z"
+    },
+    {
+      "id": "tx_dep_101",
+      "userId": "usr_kofi_002",
+      "userEmail": "kofi.mensah@example.com",
+      "userName": "Kofi Mensah",
+      "type": "deposit",
+      "mode": "real",
+      "amount": 500,
+      "currency": "GHS",
+      "paymentMethod": "mtn_momo",
+      "paymentReference": "MOM-GH-894218",
+      "status": "successful",
+      "channelDetails": {
+        "phone": "+233 24 412 3456",
+        "network": "MTN Mobile Money"
+      },
+      "notes": "Verified sandbox deposit via MTN MoMo Gateway",
+      "createdAt": "2026-03-01T14:22:00.000Z",
+      "updatedAt": "2026-03-01T14:23:10.000Z"
+    },
+    {
+      "id": "tx_wd_102",
+      "userId": "usr_kofi_002",
+      "userEmail": "kofi.mensah@example.com",
+      "userName": "Kofi Mensah",
+      "type": "withdrawal",
+      "mode": "real",
+      "amount": 150,
+      "currency": "GHS",
+      "paymentMethod": "mtn_momo",
+      "paymentReference": "WDL-GH-339182",
+      "status": "successful",
+      "channelDetails": {
+        "phone": "+233 24 412 3456",
+        "accountName": "Kofi Mensah",
+        "network": "MTN Mobile Money"
+      },
+      "notes": "Legitimate withdrawal processed to verified MoMo wallet",
+      "createdAt": "2026-03-15T10:05:00.000Z",
+      "updatedAt": "2026-03-15T11:00:00.000Z"
+    },
+    {
+      "id": "tx_demo_103",
+      "userId": "usr_kofi_002",
+      "userEmail": "kofi.mensah@example.com",
+      "userName": "Kofi Mensah",
+      "type": "demo_investment",
+      "mode": "demo",
+      "amount": 500,
+      "currency": "GHS",
+      "paymentMethod": "demo_wallet",
+      "paymentReference": "SIM-INV-55102",
+      "status": "successful",
+      "notes": "Simulated starting test capital for 30% daily growth simulator",
+      "createdAt": "2026-03-20T08:00:00.000Z",
+      "updatedAt": "2026-03-20T08:00:00.000Z"
+    },
+    {
+      "id": "tx_demo_104",
+      "userId": "usr_kofi_002",
+      "userEmail": "kofi.mensah@example.com",
+      "userName": "Kofi Mensah",
+      "type": "demo_growth",
+      "mode": "demo",
+      "amount": 350,
+      "currency": "GHS",
+      "paymentMethod": "demo_wallet",
+      "paymentReference": "SIM-GRW-99120",
+      "status": "successful",
+      "notes": "Simulated hypothetical daily compound growth (non-withdrawable demo profit)",
+      "createdAt": "2026-03-22T08:00:00.000Z",
+      "updatedAt": "2026-03-22T08:00:00.000Z"
+    }
+  ],
+  "auditLogs": [
+    {
+      "id": "aud_1791981641598_e7py6",
+      "createdAt": "2026-10-14T12:40:41.598Z",
+      "userId": "usr_admin_001",
+      "userEmail": "admin@richmoney.gh",
+      "action": "USER_LOGIN",
+      "details": "Successful user authentication.",
+      "ip": "127.0.0.1",
+      "severity": "info"
+    },
+    {
+      "id": "aud_1791981638293_s3hlh",
+      "createdAt": "2026-10-14T12:40:38.293Z",
+      "userId": "usr_kofi_002",
+      "userEmail": "kofi.mensah@example.com",
+      "action": "USER_LOGIN",
+      "details": "Successful user authentication.",
+      "ip": "127.0.0.1",
+      "severity": "info"
+    },
+    {
+      "id": "aud_1791981634537_ymwr6",
+      "createdAt": "2026-10-14T12:40:34.537Z",
+      "userId": "usr_kofi_002",
+      "userEmail": "kofi.mensah@example.com",
+      "action": "USER_LOGIN",
+      "details": "Successful user authentication.",
+      "ip": "127.0.0.1",
+      "severity": "info"
+    },
+    {
+      "id": "aud_1791981631005_xbn1f",
+      "createdAt": "2026-10-14T12:40:31.005Z",
+      "userId": "usr_kofi_002",
+      "userEmail": "kofi.mensah@example.com",
+      "action": "USER_LOGIN",
+      "details": "Successful user authentication.",
+      "ip": "127.0.0.1",
+      "severity": "info"
+    },
+    {
+      "id": "aud_001",
+      "userId": "usr_admin_001",
+      "userEmail": "admin@richmoney.gh",
+      "action": "SYSTEM_BOOTSTRAP",
+      "details": "Rich Money Ghana investment platform initialized with dual demo/real ledger separation.",
+      "ip": "127.0.0.1",
+      "severity": "info",
+      "createdAt": "2026-10-14T12:39:53.775Z"
+    },
+    {
+      "id": "aud_002",
+      "userId": "usr_kofi_002",
+      "userEmail": "kofi.mensah@example.com",
+      "action": "KYC_AUTO_VERIFIED",
+      "details": "Ghana Card biometric validation simulated successfully for Kofi Mensah.",
+      "ip": "197.254.16.8",
+      "severity": "info",
+      "createdAt": "2026-02-10T11:32:00.000Z"
+    }
+  ],
+  "simulations": []
+}
